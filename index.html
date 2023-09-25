@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>to do list</title>
+</head>
+<body>
+    <section class="get">
+        <form name="publish" method="post">
+            <label class="get__descr" for="POST-name">Your Task</label>
+            <div class="wrapperRow">
+                <input class="get__form" id="POST-name" type="text" name="message" />
+                <input class="get__btn" type="submit" value="Save" />
+            </div>
+        </form>
+        <div class="get__important">importance value</div>
+        <div class="wrapperRowSmall">
+            <input class='radioBtn__I' type="radio" id="contactChoice1" name="contact" value="imortant" />
+            <label for="color-1">
+                <span>
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                </span>
+            </label>
+
+            <input class='radioBtn__N' type="radio" id="contactChoice3" name="contact" value="notImportant" checked />
+            <label for="color-4">
+                <span>
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                </span>
+            </label>
+
+            <button class='DeleteBtn' type="radio" id="contactChoice4" name="contact" value="Delete" >Delete</button>
+        </div>
+    </section>
+    <section class="list">
+<!--        <div class="list__task"></div>-->
+    </section>
+<script src="js/main.js"></script>
+</body>
+</html>
